@@ -1,0 +1,10 @@
+{
+  "inputs": [],
+  "servers": {
+    "npmtrends": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/dist/bin.js"]
+    }
+  }
+}

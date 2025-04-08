@@ -1,0 +1,38 @@
+{
+  "name": "npmtrends-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol Server for NPM trends.",
+  "exports": "./dist/server.js",
+  "module": "./dist/server.js",
+  "type": "module",
+  "bin": {
+    "npmtrends-mcp-server": "dist/bin.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "inspect": "mcp-inspector"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeasonstudio/npmtrends-mcp-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeasonstudio/npmtrends-mcp-server/issues"
+  },
+  "homepage": "https://github.com/jeasonstudio/npmtrends-mcp-server#readme",
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.8.1",
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "zod": "^3.24.2",
+    "zod-to-json-schema": "^3.24.5"
+  }
+}
